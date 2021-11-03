@@ -11,6 +11,41 @@ html {
   box-sizing: inherit;
 }
 
+/* Focus */
+*:focus {
+  outline: 2px dashed #333;
+  outline-offset: 3px;
+}
+
+footer *:focus {
+  outline: 2px dashed #fff;
+  outline-offset: 3px;
+}
+
+/* Button */
+.button {
+  display: block;
+  width: 260px;
+  padding: 12px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ea625c;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #ea525c;
+}
+
+.button:active {
+  color:#ea625c;
+  background-color:#fff;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -56,20 +91,6 @@ img {
   color: #777;
 }
 
-.button {
-  display: block;
-  width: 260px;
-  padding: 12px;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #ea625c;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 
 /* CONTAINER */
 .container {
@@ -106,8 +127,11 @@ header {
   margin: 0 auto;
 }
 
-.header-logo {
+.site-logo-link {
   display: flex;
+}
+
+.header-logo {
   width: 35px;
   height: 42px;
 }
@@ -232,7 +256,6 @@ header {
 
 .learn::before {
   content: '';
-  display: inline-flex;
   width: 40px;
   height: 3px;
   background-color: #ea625c;
@@ -245,7 +268,7 @@ header {
 }
 
 .learn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 16px;
   line-height: 25.6px;
@@ -257,7 +280,7 @@ header {
   text-transform: uppercase;
 }
 
-/* Advantage-block */
+/* Advantage */
 .Advantage {
   padding: 176px 0;
   background-image: url(../img/watch-in-hand.jpg);
@@ -265,3 +288,28 @@ header {
   background-position: center center;
   background-position: left calc(50% + 300px) center;
 }
+
+/* Footer */
+footer {
+  padding: 240px 0;
+  background-image: url(../img/runners.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footer-content {
+  margin-left: auto;
+  padding: 20px;
+}
+
+.footer-title {
+  color: #fff;
+}
+
+.footer-text {
+  color: #fff;
+  border-color: #fff;
+}
+
