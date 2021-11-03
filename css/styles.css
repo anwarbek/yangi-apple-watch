@@ -257,4 +257,11 @@ header {
   text-transform: uppercase;
 }
 
-
+/* Advantage-block */
+.Advantage {
+  padding: 176px 0;
+  background-image: url(../img/watch-in-hand.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: left calc(50% + 300px) center;
+}
