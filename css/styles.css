@@ -195,6 +195,7 @@ header {
   flex-direction: column;
   padding-top: 91px;
   padding-bottom: 183px;
+  background-size: 587px 565px;
   background-image: url(../img/intro-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -283,6 +284,7 @@ header {
 /* Advantage */
 .Advantage {
   padding: 176px 0;
+  background-size: 400px 600px;
   background-image: url(../img/watch-in-hand.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -292,6 +294,7 @@ header {
 /* Footer */
 footer {
   padding: 240px 0;
+  background-size: 1250px 830px;
   background-image: url(../img/runners.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -313,3 +316,20 @@ footer {
   border-color: #fff;
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .intro {
+    background-image: url(../img/intro-bg@2x.jpg);
+  }
+  .Advantage {
+    background-image: url(../img/watch-in-hand@2x.jpg);
+  }
+  footer {
+    background-image: url(../img/runners@2x.png);
+  }
+}
